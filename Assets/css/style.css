@@ -4,10 +4,11 @@
     margin-bottom: 15px;
 }
 
-.navbar-brand {
+a.navbar-brand {
     font-size: 1.5rem; /* Larger font size for brand */
     font-weight: bold;
     color: #212529; /* Dark text color */
+    justify-content: center;
 }
 
 /* Form inside navbar */
