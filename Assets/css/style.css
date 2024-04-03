@@ -1,103 +1,112 @@
-/* Navbar */
-.navbar {
-    background-color: #f8f9fa; /* Light gray background */
-    margin-bottom: 15px;
-}
-
-a.navbar-brand {
-    font-size: 1.5rem; /* Larger font size for brand */
-    font-weight: bold;
-    color: #212529; /* Dark text color */
-    justify-content: center;
-}
-
-/* Form inside navbar */
-.navbar form {
-    margin-left: auto; /* Push form to the right */
-}
-
 /* Sidebar */
 aside.sidebar {
     flex-direction: left;
 }
+
 .sidebar {
     background-color: #f8f9fa;
     padding: 50px auto;
     margin-right: 20px;
-    width: 20%; /* sets width to take up 20% of page */
-    float: left; /* floats left */
+    width: 20%;
+    /* sets width to take up 20% of page */
+    float: left;
+    /* floats left */
 }
 
 .sidebar ul {
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none;
+    /* Remove bullet points */
     padding: 0;
 }
 
 .sidebar li {
-    margin-bottom: 10px; /* Add spacing between list items */
+    margin-bottom: 10px;
+    /* Add spacing between list items */
 }
 
 .sidebar a {
-    text-decoration: none; /* Remove underline */
-    color: #212529; /* Dark text color */
+    text-decoration: none;
+    /* Remove underline */
+    color: #212529;
+    /* Dark text color */
 }
 
 /* Content Section */
 .content {
     flex: 1;
     flex-direction: right;
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff;
+    /* White background */
     padding: 5px;
-    margin: 20px; /* Add spacing between sidebar and content */
-    content: 80%; /* sets content to match the remainder of 80% to fill rest, maybe set padding later */
+    margin: 20px;
+    /* Add spacing between sidebar and content */
+    content: 70%;
+    /* sets content to match the remainder of 80% to fill rest, maybe set padding later */
     border-radius: 10px;
 }
 
 /* Card */
 .card {
-    margin-bottom: 20px; /* Spacing between cards */
-    width: calc(33.33% - 20px); /* card width taking into account margin. This 100% makes sense but I had to look it up. */
-    margin-right: 20px; /* card spacing */
-    padding: 5px;
-    box-sizing: border-box; 
-    flex: 0 0 auto; /* Cards will not change size */
+    margin-bottom: 20px;
+    /* Spacing between cards */
+    width: calc(100%-20px);
+    /* card width taking into account margin. This 100% makes sense but I had to look it up. */
+    margin-right: 10px;
+    /* card spacing */
+    margin-left: 10px;
+    cards: 80% padding: 5px;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    /* Cards will not change size */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 80px;
 
 }
 
 .card-img {
-    width: 100%; /* Make image full width inside card */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    /* Make image full width inside card */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 .card-title {
-    font-size: 1.2rem; /* Larger font size for title */
+    font-size: 1.2rem;
+    /* Larger font size for title */
     font-weight: bold;
 }
 
 .card-text {
-    font-size: 1rem; /* Smaller font size for text */
+    font-size: 1rem;
+    /* Smaller font size for text */
 }
 
 .list-group-item {
-    background-color: transparent; /* Make list items transparent */
-    border: none; /* Remove border */
-    font-size: 0.9rem; /* Smaller font size for list items */
+    background-color: transparent;
+    /* Make list items transparent */
+    border: none;
+    /* Remove border */
+    font-size: 0.9rem;
+    /* Smaller font size for list items */
 }
 
 .card-link {
-    color: #007bff; /* Blue link color */
-    text-decoration: none; /* Remove underline */
+    color: #007bff;
+    /* Blue link color */
+    text-decoration: none;
+    /* Remove underline */
 }
 
 .card-link:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
+    /* Underline on hover */
 }
+
 @media (max-width: 768px) {
     .content .card {
-        width: calc(50% - 20px); /* Set card width to 50% minus margin for smaller screens */
+        width: calc(50% - 20px);
+        /* Set card width to 50% minus margin for smaller screens */
     }
 }
