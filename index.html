@@ -18,16 +18,24 @@
     <!--LINKS FOR SEARCH BAR RESULTS-->
     <div class="container-fluid p-1">
         <div class="row">
-            <aside class="col-md-3 bg-light">
+            <aside class="col-lg-3 pb-3">
                 <h5>Search For a City:</h5>
                 <form id="search-form" class="form">
                     <div class="form-inline form-group">
                         <div class="input-group">
-                            <input class="form-input weather-search" type="text" id="search-input"
-                                placeholder="Where to next?" aria-labelledby="form-heading" aria-controls="weatherToday" />
+                            <input 
+                            class="form-input weather-search" 
+                            type="text" 
+                            id="search-input"
+                            placeholder="Where to next?" 
+                            aria-labelledby="form-heading" 
+                            aria-controls="weatherToday" />
                             <div class="input-group-append"> <!--FOR LOCAL STORAGE-->
-                                <button type="submit" class="btn searchBtn" id="search-button"
-                                    aria-label="submit search">
+                                <button 
+                                type="submit" 
+                                class="btn searchBtn" 
+                                id="search-button"
+                                aria-label="submit search">
                                     Search
                                 </button>
                                 <hr class="hr weatherHour" />
@@ -35,6 +43,7 @@
                         </div>
                     </div>
                 </form>
+                <div class="list-group" id="history"></div>
             </aside>
             <section class="content row-md-6 bg-info text-center border border-dark">
                 <h2>Content Section</h2>
@@ -59,10 +68,6 @@
                     <li class="list-group-item wind">Wind:</li>
                     <li class="list-group-item humidity">Humidity:</li>
                 </ul>
-                <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
             </div>
             <!--CARD 2-->
             <div class="card col-md-2 mb-5">
@@ -77,10 +82,6 @@
                     <li class="list-group-item wind">Wind:</li>
                     <li class="list-group-item humidity">Humidity:</li>
                 </ul>
-                <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
             </div>
             <!--CARD 3-->
             <div class="card col-md-2 mb-5">
@@ -95,10 +96,6 @@
                     <li class="list-group-item wind">Wind:</li>
                     <li class="list-group-item humidity">Humidity:</li>
                 </ul>
-                <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
             </div>
             <!--CARD 4-->
             <div class="card col-md-2 mb-5">
@@ -113,10 +110,6 @@
                     <li class="list-group-item wind">Wind:</li>
                     <li class="list-group-item humidity">Humidity:</li>
                 </ul>
-                <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
             </div>
             <!--CARD 5-->
             <div class="card col-md-2 mb-5">
@@ -131,10 +124,6 @@
                     <li class="list-group-item wind">Wind:</li>
                     <li class="list-group-item humidity">Humidity:</li>
                 </ul>
-                <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
             </div>
         </div> <!--div containing all cards-->
     </section>
