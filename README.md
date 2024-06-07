@@ -30,3 +30,6 @@ The Weather Dashboard is a web application that allows users to search for the c
 
 ## License
  - This project is licensed under the MIT license, please refer to documentation for more details. 
+
+## Sources
+ - I utilized the class documents and exercises. For some of the JS functions, I referenced W3, as well as work done by my peers. Bootstrap was utilized for the CSS. 
