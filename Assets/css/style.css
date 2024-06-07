@@ -1,4 +1,3 @@
-/* Sidebar */
 aside.sidebar {
     flex-direction: left;
 }
@@ -8,105 +7,100 @@ aside.sidebar {
     padding: 50px auto;
     margin-right: 20px;
     width: 20%;
-    /* sets width to take up 20% of page */
     float: left;
-    /* floats left */
 }
 
 .sidebar ul {
     list-style-type: none;
-    /* Remove bullet points */
     padding: 0;
 }
 
 .sidebar li {
     margin-bottom: 10px;
-    /* Add spacing between list items */
 }
 
 .sidebar a {
     text-decoration: none;
-    /* Remove underline */
     color: #212529;
-    /* Dark text color */
 }
 
-/* Content Section */
+.searchBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+    background-origin: border-box;
+    box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.searchBtn:focus {
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    outline: 0;
+}
+
 .content {
     flex: 1;
     flex-direction: right;
     background-color: #ffffff;
-    /* White background */
     padding: 5px;
     margin: 20px;
-    /* Add spacing between sidebar and content */
     content: 70%;
-    /* sets content to match the remainder of 80% to fill rest, maybe set padding later */
     border-radius: 10px;
 }
 
-/* Card */
 .card {
     margin-bottom: 20px;
-    /* Spacing between cards */
-    width: calc(100%-20px);
-    /* card width taking into account margin. This 100% makes sense but I had to look it up. */
+    width: calc(100% - 20px);
     margin-right: 10px;
-    /* card spacing */
     margin-left: 10px;
-    cards: 80% padding: 5px;
     box-sizing: border-box;
     flex: 0 0 auto;
-    /* Cards will not change size */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 80px;
-
+    padding: 5px; 
 }
 
-.card-img {
-    width: 100%;
-    /* Make image full width inside card */
+.card-img, .weather-icon {
+    width: .2rem;
     height: auto;
-    /* Maintain aspect ratio */
 }
 
 .card-title {
     font-size: 1.2rem;
-    /* Larger font size for title */
     font-weight: bold;
 }
 
 .card-text {
     font-size: 1rem;
-    /* Smaller font size for text */
 }
 
 .list-group-item {
     background-color: transparent;
-    /* Make list items transparent */
     border: none;
-    /* Remove border */
     font-size: 0.9rem;
-    /* Smaller font size for list items */
 }
 
 .card-link {
     color: #007bff;
-    /* Blue link color */
     text-decoration: none;
-    /* Remove underline */
 }
 
 .card-link:hover {
     text-decoration: underline;
-    /* Underline on hover */
 }
 
 @media (max-width: 768px) {
     .content .card {
         width: calc(50% - 20px);
-        /* Set card width to 50% minus margin for smaller screens */
     }
 }
